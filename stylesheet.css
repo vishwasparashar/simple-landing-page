@@ -1,0 +1,194 @@
+/* general css section */
+body{
+    padding: 0px;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* now lets get a fancy backgroud for logo */
+.heading{
+    background: linear-gradient(orange,#ffff,rgb(3,63,3));
+    /* used all that color form for fun😋 */
+    min-height: 15vh;
+
+}
+/* now lets align our logo to our background */
+#logo{
+    display:block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6vh;
+    width:50%;
+    /* try to use short hand for this particular section */
+}
+/* lets give styling to our main landing page */
+/* here we are trying to import background image and reduce opacity of the background but not hte text */
+#flag{
+    position: relative;
+    width:100%;
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+#flag::before{
+    content: "";
+    background-image: url("./resources/flag.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    opacity: 0.7;
+}
+/* here we are just styling our text  */
+#intro{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 2rem;
+
+}
+/* now let us style our navigation buttons */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+}
+/* let us also chang e color of text inside button */
+a{
+    color: black;
+}
+/* let us remove the decorations and features of link and turn them to button */
+a:link{
+    text-decoration: none;
+    padding: 5px;
+    border: solid;
+}
+/* let us give special features for every navigation buttons using some basic css properties */
+/* food button */
+/* let us give id to our navigators */
+#foodlink{
+    border-color: orangered;
+    background-color: #ffff;
+    border-radius: 20px;
+
+}
+/* let us give some hover effect make it look better */
+#foodlink:hover{
+    transition: 1s;
+    background-color: orangered;
+    border-color: #ffff;
+    box-shadow: 5vh 5vh 3vh orangered;
+    color: #ffff;
+}
+
+
+/* festival button */
+#festivallink{
+    border-color: #ffff;
+    background-color: #ffff;
+    border-radius: 20px;
+}
+#festivallink:hover{
+    transition: 1s;
+    background-color: #000080;
+    border-color: #ffff;
+    box-shadow: 5vh 5vh 3vh #000080;
+    color: #ffff;
+}
+
+/* tourism button */
+#tourismlink{
+    border-color:rgb(3,63,3);
+    background-color: #ffff;
+    border-radius: 20px;
+
+}
+#tourismlink:hover{
+    transition: 1s;
+    background-color: rgb(3,63,3);
+    border-color: #ffff;
+    box-shadow: 5vh 5vh 3vh rgb(3,63,3);
+    color: #ffff;
+}
+/* now let us adjust the sub parts of landing page */
+img{
+    max-width: 30%;
+}
+#foodcontent{
+    display: flex;
+    margin-top: 20px;
+    border-style: ridge;
+    border-width: 20px;
+    font-size: 4vh;
+    text-overflow: clip;
+    padding:auto;
+    text-align: center;
+    
+}
+#food{
+    flex:1;
+    border: 2px solid black;
+
+}
+#food:first-child{
+    margin-right: 20px;
+
+}
+#festivalcontent{
+    display: flex;
+    margin-top: 20px;
+    border-style: ridge;
+    border-width: 20px;
+    font-size: 4vh;
+    text-overflow: clip;
+    padding:auto;
+    text-align: center;
+    
+}
+#festival{
+    flex:1;
+    border: 2px solid black;
+
+}
+#festival:first-child{
+    margin-right: 20px;
+
+}
+#tourismcontent{
+    display: flex;
+    margin-top: 20px;
+    border-style: ridge;
+    border-width: 20px;
+    font-size: 4vh;
+    text-overflow: clip;
+    padding:auto;
+    text-align: center;
+    
+}
+#tourism{
+    flex:1;
+    border: 2px solid black;
+
+}
+#tourism:first-child{
+    margin-right: 20px;
+
+}
+/* last part let us style our footer part */
+footer{
+    min-height: 10vh;
+    color: #ffff;
+    background-color: black;
+}
